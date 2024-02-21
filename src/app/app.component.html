@@ -30,3 +30,24 @@
 <div appHighlight highlightColor="blue">
   Fluotez moi en bleu !
 </div>
+
+<div>
+  <p appStaticPColor>test1</p>
+  <p appStaticPColor textColor="blue">test2</p>
+  <p appStaticPColor textColor="red">test3</p>
+</div>
+
+
+<div appCoffee>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam vero officiis, nisi numquam aliquam.</p>
+</div>
+
+<!--Nos pipes sont éxécutés de gauche à droite-->
+{{"marIo" | lowercase | uppercase}}
+<br>
+{{ "420" | currency : 'EUR'}}
+<br>
+{{ "Je suis une loutre salope !" | loutre : "tortue"}}
+<br>
+
+{{"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis, corporis iure temporibus eligendi et, neque labore, nesciunt beatae ex maiores suscipit facilis. Ipsam voluptas sunt vitae. Suscipit tempora natus itaque iste iure explicabo et est quae, ipsam qui possimus, voluptatem voluptates excepturi vero dolorum facere ab eveniet quo enim." | summary : 35}}
